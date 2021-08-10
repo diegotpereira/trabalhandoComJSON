@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+
+        /* insira esses itens 
+        pessoa.nome
+        pessoa.nome[0]
+        pessoa.idade
+        pessoa.interesses[1]
+        pessoa.bio()
+        pessoa.saudacao() */
+
+        var pessoa = {
+            nome: ['Bob', 'Smith'],
+            // nome: {
+            //     primeiro: 'Bob',
+            //     ultimo: 'Smith'
+            // },
+            idade: 32,
+            sexo: 'masculino',
+            interesses: ['música', 'esquiar'],
+            bio: function() {
+                alert(this.nome[0] + '' + this.nome[1] + 'tem' + this.idade + ' anos de idade. Ele gosta de ' + this.interesses[0] + ' e ' + this.interesses[1] + '.');
+            },
+            saudacao: function() {
+                alert ('Oi! Eu sou ' + this.nome[0] + '.');
+            },
+        };
+
+        // var myDataName =  nameInput.value;
+        // var myDataValue = nameValue.value;
+
+        pessoa[myDataName] = myDataValue;
+
+        var myDataName = 'altura';
+        var myDataValue = '1.75m';
+        pessoa[myDataName] = myDataValue;
+
+    </script>
+</html>
